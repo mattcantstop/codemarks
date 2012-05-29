@@ -29,7 +29,7 @@ class CodemarksController < ApplicationController
   def public
     respond_to do |format|
       format.html do
-        render 'users/dashboard'
+        render 'codemarks/index'
       end
 
       format.json do

@@ -111,10 +111,12 @@ end
 
 When /^I go to the public page$/ do
   visit '/public'
+  step 'I wait until all Ajax requests are complete'
 end
 
 When /^I go to his page$/ do
   visit '/public'
+  step 'I wait until all Ajax requests are complete'
   page.click_link @user.nickname
 end
 

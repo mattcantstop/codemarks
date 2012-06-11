@@ -1,9 +1,9 @@
 define ['text!../../templates/codemark.html'], (template) ->
   CodemarkView = Backbone.View.extend
-    className: 'codemark'
+    className: 'iso'
 
     initialize: ->
-      console.log template
+      #console.log template
 
     render: ->
       @toHTML()

@@ -23,4 +23,6 @@ define ['CodemarkCollection', 'CodemarksView'], (CodemarkCollection, CodemarksVi
 
       #this should go in an App View I think
       $('#main_content').replaceWith(codemarksView.$el)
-
+      $('.codemarks').isotope
+        itemSelector : '.codemark',
+        layoutMode : 'fitColumns'

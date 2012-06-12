@@ -4,9 +4,6 @@ define ['CodemarksView', 'CodemarkView', '../isotope'], (CodemarksView, Codemark
 
     render: ->
       @toHTML()
-      @$el.isotope
-        itemSelector : '.iso',
-        layoutMode : 'fitRows'
 
     toHTML: ->
       for codemark in @collection.models

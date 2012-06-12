@@ -3,12 +3,10 @@ define ['text!../../templates/codemark.html'], (template) ->
     className: 'codemark'
 
     initialize: ->
-      console.log template
+      #console.log template
 
     render: ->
-      @toHTML()
+      @$el.append(@toHTML())
 
     toHTML: ->
-      # TODO: Ideally, this would always just return a string and render would append it to the
-      # DOM
-      @$el.append(template)
+      template

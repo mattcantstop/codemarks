@@ -1,6 +1,6 @@
-define ['CodemarksView', 'CodemarkView'], (CodemarksView, CodemarkView) ->
+define ['CodemarksView', 'CodemarkView', '../jquery.masonry', '../jquery.imagesloaded'], (CodemarksView, CodemarkView, Masonry) ->
   CodemrksView = Backbone.View.extend
-    className: 'codemarks'
+    className: 'codemarks clearfix'
 
     render: ->
       @toHTML()

@@ -25,5 +25,4 @@ define ['CodemarkCollection', 'CodemarksView'], (CodemarkCollection, CodemarksVi
       $('#main_content').replaceWith(codemarksView.$el)
       $('.codemarks').masonry
         itemSelector : '.codemark',
-        columnWidth : 100
 

@@ -1,6 +1,6 @@
 App.Views.Codemark = Backbone.View.extend
   className: 'codemark'
-  tagName: 'section'
+  tagName: 'li'
 
   initialize: ->
 

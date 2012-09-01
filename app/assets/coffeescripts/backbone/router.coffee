@@ -51,6 +51,7 @@ App.MainRouter = Backbone.Router.extend
       collection: App.codemarks
     codemarkList.render()
     $('#main_content').html(codemarkList.$el)
+    console.log stroll.bind(codemarkList.$el)
     App.router.setActiveSort()
 
   setActiveSort: ($activeSortLink) ->

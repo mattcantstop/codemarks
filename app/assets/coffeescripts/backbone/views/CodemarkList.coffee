@@ -1,5 +1,10 @@
+#= require 'stroll'
+
 App.Views.CodemarkList = Backbone.View.extend
   className: 'codemarks'
+  tagName: 'ul'
+
+  initialize: ->
 
   render: ->
     @toHTML()
